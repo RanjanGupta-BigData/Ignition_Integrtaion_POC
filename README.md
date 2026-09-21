@@ -2,7 +2,7 @@
 
 A working proof-of-concept demonstrating **Ignition as a central connect + transform layer**, handing off processed equipment/alarm data to two independent Python integration pipelines that deliver it to **Axxos OEE** (production monitoring / OEE) and **Maximo** (maintenance management).
 
-Full write-up, use case description (English + Hindi), and architecture diagram: see [`docs/POC_Documentation.md`](docs/POC_Documentation.md)
+Full write-up, use case description, and architecture diagram: see [`docs/POC_Documentation.md`](docs/POC_Documentation.md)
 
 ![Architecture Diagram](docs/architecture-diagram.png)
 
