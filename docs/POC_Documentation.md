@@ -1,6 +1,6 @@
 # Ignition Integration POC — Complete Documentation
 
-*Prepared for: Developer training / Miro board content*
+*Prepared for: Developer  / Miro board *
 *Covers: use case, architecture, what was built, and an onboarding guide for developers new to Ignition*
 
 ---
@@ -16,16 +16,6 @@ Historically, data has moved between plant equipment and these systems through i
 The goal of this POC is to demonstrate **Ignition as a central connectivity and transformation layer**: Ignition connects to the data source (equipment/PLC events), applies filtering and transformation logic (timestamp formatting, field renaming, splitting nested records), and hands off the processed data through a clean interface. From there, two **independent Python integration pipelines** — one for Axxos OEE, one for Maximo — pick up the processed data, apply system-specific field mapping, and deliver it to each destination system.
 
 This POC proves the pattern end-to-end using simulated equipment data, a local Ignition instance, and mock Axxos/Maximo destinations (built as small local dashboards), so the same pattern can later be pointed at real plant data sources and real Axxos/Maximo APIs.
-
-### Hindi
-
-Plant ke maintenance domain mein do alag-alag systems use hote hain: **Maximo**, jo maintenance management (work orders, spare parts, maintenance activities) ke liye use hota hai, aur **Axxos OEE**, jo production monitoring aur Overall Equipment Effectiveness (OEE) tracking ke liye use hota hai, jisme alarm aur disturbance events bhi shamil hain.
-
-Ab tak, plant equipment se in systems tak data alag-alag, purpose-built adapters aur chhoti transformation scripts ke through jata raha hai. Time ke saath ye bahut saari disconnected integrations bana deta hai, jinhe maintain karna mushkil hota hai, jo poorly documented hoti hain, aur jinhe extend karna difficult hota hai.
-
-Is POC ka goal hai **Ignition ko ek central connectivity aur transformation layer** ke roop mein demonstrate karna: Ignition data source (equipment/PLC events) se connect karta hai, filtering aur transformation logic apply karta hai (timestamp formatting, field renaming, nested records ko split karna), aur processed data ko ek clean interface ke through aage bhejta hai. Wahan se, do **independent Python integration pipelines** — ek Axxos OEE ke liye, ek Maximo ke liye — processed data ko pick karti hain, apna system-specific field mapping apply karti hain, aur use apne-apne destination system tak deliver karti hain.
-
-Ye POC is poore pattern ko end-to-end prove karta hai simulated equipment data, ek local Ignition instance, aur mock Axxos/Maximo destinations (chhote local dashboards ke roop mein bane hue) use karke — taaki yehi pattern baad mein real plant data sources aur real Axxos/Maximo APIs ke saath use kiya ja sake.
 
 ---
 
